@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby'
 import Campeao from "../../images/curiosidades/torneio.jpg"
 import Torta from "../../images/curiosidades/torta.jpg"
-import * as S from './styled'
+import * as S from '../Curiosidades/styled'
 
 export function Curiosidades() {
     return (

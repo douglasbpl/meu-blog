@@ -27,7 +27,7 @@ export function Projetos() {
           <S.MenuFixedPM>
             <S.List>
               <Link style={{ color: "white", textDecoration: "none" }} to="/"><S.ListItem>{bthome}</S.ListItem></Link>
-              <Link style={{ color: "white", textDecoration: "none" }} to="/Crd"><S.ListItem>{btcrd}</S.ListItem></Link>
+              <Link style={{ color: "white", textDecoration: "none" }} to="/crd"><S.ListItem>{btcrd}</S.ListItem></Link>
             </S.List>
           </S.MenuFixedPM>
         </S.ContainerMenuFixed>

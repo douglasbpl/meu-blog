@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby'
 import Campeao from "../../images/curiosidades/torneio.jpg"
 import Torta from "../../images/curiosidades/torta.jpg"
-import * as S from '../Curiosidades/styled'
+import * as S from './styled'
 
 export function Curiosidades() {
     return (
@@ -11,7 +11,7 @@ export function Curiosidades() {
                 <S.MenuFixedPM>
                     <S.List>
                         <Link to="/" style={{ color: "white", textDecoration: "none" }}><S.ListItem>Home</S.ListItem></Link>
-                        <Link to="/Prj" style={{ color: "white", textDecoration: "none" }} ><S.ListItem>Projetos</S.ListItem></Link>
+                        <Link to="/prj" style={{ color: "white", textDecoration: "none" }} ><S.ListItem>Projetos</S.ListItem></Link>
                     </S.List>
                 </S.MenuFixedPM>
             </S.ContainerMenuFixed>

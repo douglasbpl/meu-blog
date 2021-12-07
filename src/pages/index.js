@@ -14,7 +14,7 @@ export default function Index() {
   return (
     <div>
       <Helmet>
-      <title>Meu BLog</title>
+      <title>Um pouco sobre mim</title>
       </Helmet>
       <GlobalStyle />     
       <Header />

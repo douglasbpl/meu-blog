@@ -26,7 +26,7 @@ export function Footer() {
       }
       `)
   
-   const { btmenu, bthome, btsobre, btform, btcrd, btprj, btcontatos, btfacebook, btinstagram, btgithub, btlinkedin, layoutfootertxt } = data.alldata.footers[0];
+   const { btfacebook, btinstagram, btgithub, btlinkedin, layoutfootertxt } = data.alldata.footers[0];
    
   return (
 

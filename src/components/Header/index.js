@@ -32,11 +32,11 @@ export function Header() {
           <S.MenuFixed>
           <S.IMG src={logoheader.url}  alt="Minha foto em desenho" />            
               <S.List>
-              <Link style={{ color: "white", textDecoration: "none" }} to="#Home"><S.ListItem>{bthome}</S.ListItem></Link>
+              <Link style={{ color: "white", textDecoration: "none" }} to="/"><S.ListItem>{bthome}</S.ListItem></Link>
               <Link style={{ color: "white", textDecoration: "none" }} to="#Sobre"><S.ListItem>{btsobre}</S.ListItem></Link>
               <Link style={{ color: "white", textDecoration: "none" }} to="#Formação"><S.ListItem>{btform}</S.ListItem></Link>             
-              <Link style={{ color: "white", textDecoration: "none" }} to="/crd"><S.ListItem>{btcrd}</S.ListItem></Link>
-              <Link style={{ color: "white", textDecoration: "none" }} to="/prj"><S.ListItem>{btprj}</S.ListItem></Link>    
+              <Link style={{ color: "white", textDecoration: "none" }} to="/Crd"><S.ListItem>{btcrd}</S.ListItem></Link>
+              <Link style={{ color: "white", textDecoration: "none" }} to="/Prj"><S.ListItem>{btprj}</S.ListItem></Link>    
               <Link style={{ color: "white", textDecoration: "none" }} to="#Contatos"><S.ListItem>{btcontatos}</S.ListItem></Link>   
               </S.List>            
               </S.MenuFixed>         

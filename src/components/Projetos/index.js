@@ -1,8 +1,8 @@
-import React from "react"
-import { Link } from "gatsby"
-import * as S from "./styled";
+import React from 'react'
+import { Link } from 'gatsby'
+import * as S from './styled'
 import SimpleSlider from "./slide"
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby'
 
 
 export function Projetos() {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Link } from 'gatsby'
 import Campeao from "../../images/curiosidades/torneio.jpg"
 import Torta from "../../images/curiosidades/torta.jpg"

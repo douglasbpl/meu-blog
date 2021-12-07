@@ -1,7 +1,7 @@
-import React from "react";
-import Carousel from 'nuka-carousel';
+import React from 'react'
+import Carousel from 'nuka-carousel'
 import * as S from './styled'
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby'
 
 
 export default function SimpleSlider() {

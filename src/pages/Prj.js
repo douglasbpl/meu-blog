@@ -13,7 +13,7 @@ export default function Prj() {
     <div>
       <GlobalStyle />
        <Helmet>
-       <title>Meu BLog</title>
+       <title>Um pouco sobre mim</title>
       </Helmet>
       <Projetos/>
       <Footer/>       

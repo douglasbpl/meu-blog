@@ -11,6 +11,7 @@ module.exports = {
       fieldName: "alldata",
       url: "https://api-us-east-1.graphcms.com/v2/ckwgt0db90jga01xo4hkvaz6s/master",
     },
-  },
-],
+  },  
+    `gatsby-plugin-react-helmet`,    
+  ],
 }

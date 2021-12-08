@@ -101,9 +101,11 @@ export const CopyRight = styled.div`
   align-items: center;
   justify-content: center;
   height: 9vh;
-  text-align: center;  
-  border: 2px solid green;
-  border-bottom: 3px solid green;
+  text-align: center;    
+  border-top:0px;
+  border-bottom: 2px solid green;
+  border-left: 2px solid green;
+  border-right: 2px   solid green;
   &:hover{
     background-color: #24ada5;
   }

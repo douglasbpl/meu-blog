@@ -43,7 +43,7 @@ export const ContainerSection = styled.div`
 display:flex;
 flex-direction:column;
 align-items:center;
-justify-content:center;
+justify-content: space-around;
 width:100%;
 padding-bottom:2rem;
 `
@@ -72,11 +72,13 @@ color:green;
 
 export const IntoSectionleft = styled.div`
 display:flex;
-width:50%;
+width:100%;
 justify-content:center;
+flex-wrap:wrap;
+padding-bottom:2rem;
  
-@media (min-width: 768px) {
-    width:80%;
+figure{
+    order:1;
 }
 
 div {
@@ -85,7 +87,8 @@ flex-direction:column;
 justify-content:space-evenly;
 width:40%;
 text-align:left;
-height:33vh;        
+height:33vh;
+order:2;        
 }
 
 div > h2 {
@@ -113,8 +116,8 @@ div > button:hover {
     background-color: black;    
 }
 img{
-    width: 343px;
-    height: 279px;
+    width: 400px;
+    height: 350px;
 
 }
 `
@@ -122,12 +125,14 @@ img{
 
 export const IntoSectionRight = styled.div`
 display:flex;
-width:50%;
+width:100%;
 justify-content:center;
-@media (min-width: 768px) {
-    width:80%;
-}
+padding-bottom:2rem;
+flex-wrap:wrap;
 
+figure{
+    order:2;
+}
 
 div {
     display:flex;
@@ -135,7 +140,8 @@ div {
     justify-content:space-evenly;
         width:40%;
     text-align:right;
-    height:33vh;    
+    height:33vh;
+    order:1;    
 }
 div > h2 {
     color: white;
@@ -165,8 +171,7 @@ div > button:hover {
 }
 
 img{
-    width: 343px;
-    height: 279px;
-
+    width: 400px;
+    height: 350px;
 }
 `

@@ -6,6 +6,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 
 export function Projetos() {
+  
   const data = useStaticQuery(graphql`
   query {
     alldata{               
@@ -68,9 +69,7 @@ export function Projetos() {
 `)
 
   const { bthome, btcrd } = data.alldata.projetos[0]
-  return (
-    <div>
-
+  return (  
       <S.Container>
         <S.ContainerMenuFixed>
           <S.MenuFixedPM>
@@ -84,7 +83,6 @@ export function Projetos() {
         <S.ContainerSlide>
           <SimpleSlider />
         </S.ContainerSlide>
-      </S.Container >
-    </div>
+      </S.Container >    
   )
 }

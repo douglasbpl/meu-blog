@@ -110,10 +110,6 @@ export default function SimpleSlider() {
     { img: prj.pokemonunite.url },
   ]
 
-
-
-
-
   return (
 
     <S.ContainerInto>
@@ -150,8 +146,7 @@ export default function SimpleSlider() {
         </Carousel>
       </S.Card>    
       
-      </S.ContainerInto>
-      
+      </S.ContainerInto>     
 
   )
 }

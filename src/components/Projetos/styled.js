@@ -6,7 +6,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;       
-`;
+`
 
 export const ContainerSlide = styled.div`
 display: flex;
@@ -51,7 +51,6 @@ display:flex;
     color:gold;    
 }
 `
-
 
 export const ContainerInto = styled.div`
         display: flex;

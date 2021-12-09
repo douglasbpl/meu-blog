@@ -30,7 +30,7 @@ export default function SecondSection() {
       <h2>{formacao}</h2>
       <div>
         <figure>
-        <S.MyIMG src={minhafotopequeno.url} alt="Formação" />
+        <S.MyIMG src={minhafotopequeno.url} alt="Minha foto pequeno" />
         </figure>
         <ul>
           <li><p>{formado1}</p></li>

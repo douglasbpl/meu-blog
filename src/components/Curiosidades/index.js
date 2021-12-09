@@ -41,7 +41,7 @@ export function Curiosidades() {
                 <S.MenuFixedPM>
                     <S.List>
                         <Link to="/" style={{ color: "white", textDecoration: "none" }}><S.ListItem>{bthome}</S.ListItem></Link>
-                        <Link to="/prj" style={{ color: "white", textDecoration: "none" }}><S.ListItem>{btprojetos}</S.ListItem></Link>
+                        <Link to="/pjt" style={{ color: "white", textDecoration: "none" }}><S.ListItem>{btprojetos}</S.ListItem></Link>
                     </S.List>
                 </S.MenuFixedPM>
             </S.ContainerMenuFixed>

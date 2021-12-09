@@ -29,8 +29,11 @@ export default function SimpleSlider() {
 
   const data = useStaticQuery(graphql`
         query {
-            alldata{
-                projetos {                    
+            alldata{               
+                  projetos {
+                    bthome
+                    btcrd
+                    ttlprj                    
                     mod1
                     beat{
                       url

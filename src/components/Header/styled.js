@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const ContainerHeader = styled.div`
 display:flex;
 width:100%;
-min-height:10vh;
+min-height:10vh; 
 `
 export const ContainerMenuFixed = styled.div`
 width:100%;
@@ -22,14 +22,13 @@ export const List = styled.ul`
 display:flex;
     align-items:center;
     justify-content:space-around;
-    width:50%;
+    width:60%;
     height:100%;    
     flex-wrap: wrap;
     list-style:none;
+    padding:0;
     font-size:1.3rem;
-    @media (max-width: 768px) {
-        width:80%;
-    }
+        
 `
 
 export const ListItem = styled.li`
@@ -48,4 +47,5 @@ display:flex;
 } 
 `
 export const IMG = styled.img`
-width:50px;`
+width:48px;
+`

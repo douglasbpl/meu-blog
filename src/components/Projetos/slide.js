@@ -1,7 +1,7 @@
 import React from 'react'
 import Carousel from 'nuka-carousel'
 import * as S from './styled'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 
 
 export default function SimpleSlider() {
@@ -94,21 +94,21 @@ export default function SimpleSlider() {
   const prj = data.alldata.projetos[0]
 
   const dataprj = [
-    { img: prj.beat.url },
-    { img: prj.boaspraticas.url },
-    { img: prj.finn.url },
-    { img: prj.thewitcher.url },
-    { img: prj.crespos.url },
-    { img: prj.calculadora.url },
-    { img: prj.contador.url },
-    { img: prj.toDo.url },
-    { img: prj.filmeseseries.url },
-    { img: prj.lojadecarros.url },
-    { img: prj.recipes.url },
-    { img: prj.taxi.url },
-    { img: prj.strytegy.url },
-    { img: prj.harrypotter.url },
-    { img: prj.pokemonunite.url },
+    { img: prj.beat.url, link: "" },
+    { img: prj.boaspraticas.url, link: "" },
+    { img: prj.finn.url, link: "" },
+    { img: prj.thewitcher.url, link: "" },
+    { img: prj.crespos.url, link: 'https://competent-austin-f7943f.netlify.app/' },
+    { img: prj.calculadora.url, link: 'https://i3v0s.csb.app/ ' },
+    { img: prj.contador.url, link: 'https://bc4hh.csb.app/' },
+    { img: prj.toDo.url, link: 'https://ylygx.csb.app/' },
+    { img: prj.filmeseseries.url, link: 'https://6y3zk.csb.app/movies' },
+    { img: prj.lojadecarros.url, link:'https://projetofinalmod2.netlify.app/'},
+    { img: prj.recipes.url, link:'https://recipes-desafio.netlify.app' },
+    { img: prj.taxi.url, link:'https://desafio-taxi.netlify.app' },
+    { img: prj.strytegy.url, link:'https://desafio-landing-strytegy.netlify.app' },
+    { img: prj.harrypotter.url, link:'https://hp-db.netlify.app' },
+    { img: prj.pokemonunite.url, link:'https://dazzling-boyd-0942a0.netlify.app' },
   ]
 
   return (
@@ -119,7 +119,7 @@ export default function SimpleSlider() {
         <Carousel {...settings}>
           {dataprj.slice(0, 5).map((mod1, index) => (
             <div key={index}>
-              <img src={mod1.img} alt="Miniatura do Projeto" />
+              <a href={mod1.link} target="_blank" rel="noreferrer"><img src={mod1.img} alt="Miniatura do Projeto" /></a>
             </div>
           ))}
         </Carousel>
@@ -130,7 +130,7 @@ export default function SimpleSlider() {
         <Carousel {...settings}>
           {dataprj.slice(5, 10).map((mod2, index) => (
             <div key={index}>
-              <img src={mod2.img} alt="Miniatura do Projeto" />
+              <a href={mod2.link} target="_blank" rel="noreferrer"><img src={mod2.img} alt="Miniatura do Projeto" /></a>
             </div>
           ))}
         </Carousel>
@@ -141,7 +141,7 @@ export default function SimpleSlider() {
         <Carousel {...settings}>
           {dataprj.slice(10, 15).map((mod3, index) => (
             <div key={index}>
-              <img src={mod3.img} alt="Miniatura do Projeto" />
+              <a href={mod3.link} target="_blank" rel="noreferrer" ><img src={mod3.img} alt="Miniatura do Projeto" /></a>
             </div>
           ))}
         </Carousel>

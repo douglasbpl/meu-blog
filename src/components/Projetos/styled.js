@@ -6,10 +6,11 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
+    color: #fff;
     h1{
         font-size: 2.5rem;
         font-weight: bold;
-        color: #fff;
+        
     }       
 `
 
@@ -74,8 +75,7 @@ export const Card = styled.div`
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
-    border-radius: 10px;
-    color: #fff;
+    border-radius: 10px;    
 img{
     width: 100%;
     height: 490px;

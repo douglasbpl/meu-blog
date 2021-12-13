@@ -5,7 +5,8 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;;    
-    width: 100%;  
+    width: 100%;
+    color: #fff;     
     `
 export const ContainerMenuFixed = styled.div`
 width:100%;
@@ -73,8 +74,13 @@ padding-top:10vh;
 `
 export const MyPhoto = styled.img`
 border-radius: 10% ;
-height:30vh;           
+height:400;           
 width: 350px;
+@media (max-width: 320px) {        
+        width: 300px;
+        height: 300px;
+    }
+}
 `
  
 
@@ -84,7 +90,7 @@ export const BoxTxtLeft = styled.div`
     align-items:center;     
     border-radius: 10% ;        
     p{
-        color:white;
+       
         font-size:25px;        
         text-align:center;        
     }
@@ -101,7 +107,7 @@ export const BoxTxtLeft = styled.div`
   
     border-radius: 10% ;      
         p{
-        color:white;
+        
         font-size:25px;        
         text-align:center;        
     }
@@ -216,13 +222,14 @@ div > button:hover {
     background-color: black;    
 }
 img{
+    border-radius: 10%;
     width: 400px;
     height: 350px;
 }
 @media (max-width: 375px) {
     img{
         width: 300px;
-        height: 250px;
+        height: 300px;
     }
 }
 `
@@ -297,13 +304,14 @@ div > button:hover {
 }
 
 img{
+    border-radius: 10%;
     width: 400px;
     height: 350px;
 }
 @media (max-width: 375px) {
     img{
         width: 300px;
-        height: 250px;
+        height: 300px;
     }
 }
 `

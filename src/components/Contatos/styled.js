@@ -7,10 +7,11 @@ export const ContainerContatos = styled.div`
     justify-content: space-around;
     width: 100%;    
     min-height: 75vh;
+    color: #fff; 
     h1{
         font-size: 2.5rem;
         font-weight: bold;
-        color: #fff;
+        
         margin-bottom: 1rem;
         
 
@@ -18,7 +19,7 @@ export const ContainerContatos = styled.div`
     p{
         font-size: 1.5rem;
         font-weight: bold;
-        color: #fff;
+        
         text-align: center;
 
     }

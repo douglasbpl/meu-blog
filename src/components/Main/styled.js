@@ -4,7 +4,7 @@ export const ContainerMain = styled.div`
 width:100%;
 display:flex;
 flex-direction:column;
-
+color: #fff;
 `
 
 export const ContainerFIrstSection = styled.section`
@@ -30,13 +30,12 @@ figure{
     max-width: 400px;
     justify-content: center;
     align-items: center;    
-}
 `
 
 export const MyIMG = styled.img`
 border-radius: 50% 50% 50% 50% / 30% 26% 74% 70% ;
-width: 100%;
-}
+width: 100%; 
+  
 `
 
 export const About = styled.div`
@@ -48,11 +47,11 @@ text-align: center;
 max-width: 400px;
 padding: 1.5rem;
 h1{
-    color: white;
+    
     font-size: 30px;
 }
 p{
-    color: white;
+    
     font-size: 18px;
     }
 `

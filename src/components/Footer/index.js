@@ -25,33 +25,12 @@ export function Footer() {
         }
       }
       `)
-  
-   const { btfacebook, btinstagram, btgithub, btlinkedin, layoutfootertxt } = data.alldata.footers[0];
-   
+
+  const { btfacebook, btinstagram, btgithub, btlinkedin, layoutfootertxt } = data.alldata.footers[0];
+
   return (
 
-    <S.ContainerFooter id="Contatos">
-      <S.Container>
-        {/* <S.BoxMenuFSection>
-          <div>
-            <h3>{btmenu}</h3>
-            <ul>
-            <li><Link to="/#Home">{bthome}</Link></li>
-            <li><Link to="/#">{btsobre}</Link></li>
-            <li><Link to="#">{btform}</Link></li>
-            </ul>
-          </div>
-          <div >
-            <h3>{btmenu}</h3>
-            <ul>
-              <li><Link to="/crd">{btcrd}</Link></li>
-              <li><Link to="/prj">{btprj}</Link></li>
-              <li><Link to="#Contatos">{btcontatos}</Link></li>                
-            </ul>
-          </div>
-
-        </S.BoxMenuFSection> */}
-      </S.Container>
+    <S.ContainerFooter id="Footer">
       <S.BoxsocialNetwork>
         <ul>
           <li><a href="https://www.facebook.com/" target="_blank" rel="noreferrer">{btfacebook}</a></li>
@@ -62,10 +41,10 @@ export function Footer() {
       </S.BoxsocialNetwork>
       <S.CopyRight>
         <div>
-          <p>{layoutfootertxt}</p>          
+          <p>{layoutfootertxt}</p>
         </div>
       </S.CopyRight>
     </S.ContainerFooter>
   )
-}   
+}
 

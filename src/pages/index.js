@@ -11,9 +11,9 @@ export default function Index() {
   return (
     <div>
       <Helmet>
-      <title>Um pouco sobre mim</title>
+        <title>Um pouco sobre mim</title>
       </Helmet>
-      <GlobalStyle />     
+      <GlobalStyle />
       <Header />
       <Main />
       <Footer />

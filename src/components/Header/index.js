@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { graphql, useStaticQuery } from 'gatsby'
 
 
-export function Header() {  
+export function Header() {
 
   const data = useStaticQuery(graphql`
     query {
@@ -24,23 +24,21 @@ export function Header() {
     }
     `)
 
-  const { logoheader, bthome , btsobre, btform, btcrd, btprj, btcontatos } = data.alldata.headers[0];
+  const { logoheader, bthome, btsobre, btprj, btcontatos } = data.alldata.headers[0];
 
   return (
     <S.ContainerHeader id="Home">
-        <S.ContainerMenuFixed>          
-          <S.MenuFixed>
-          <S.IMG src={logoheader.url}  alt="Minha foto em desenho" />            
-              <S.List>
-              <Link style={{ color: "white", textDecoration: "none" }} to="/"><S.ListItem>{bthome}</S.ListItem></Link>
-              <Link style={{ color: "white", textDecoration: "none" }} to="#Sobre"><S.ListItem>{btsobre}</S.ListItem></Link>
-              <Link style={{ color: "white", textDecoration: "none" }} to="#Formação"><S.ListItem>{btform}</S.ListItem></Link>             
-              <Link style={{ color: "white", textDecoration: "none" }} to="/crd"><S.ListItem>{btcrd}</S.ListItem></Link>
-              <Link style={{ color: "white", textDecoration: "none" }} to="/pjt"><S.ListItem>{btprj}</S.ListItem></Link>    
-              <Link style={{ color: "white", textDecoration: "none" }} to="#Contatos"><S.ListItem>{btcontatos}</S.ListItem></Link>   
-              </S.List>            
-              </S.MenuFixed>         
-          </S.ContainerMenuFixed>
+      <S.ContainerMenuFixed>
+        <S.MenuFixed>
+          <S.IMG src={logoheader.url} alt="Minha foto em desenho" />
+          <S.List>
+            <Link style={{ color: "white", textDecoration: "none" }} to="/"><S.ListItem>{bthome}</S.ListItem></Link>
+            <Link style={{ color: "white", textDecoration: "none" }} to="/crd"><S.ListItem>{btsobre}</S.ListItem></Link>
+            <Link style={{ color: "white", textDecoration: "none" }} to="/pjt"><S.ListItem>{btprj}</S.ListItem></Link>
+            <Link style={{ color: "white", textDecoration: "none" }} to="/contatos"><S.ListItem>{btcontatos}</S.ListItem></Link>
+          </S.List>
+        </S.MenuFixed>
+      </S.ContainerMenuFixed>
     </S.ContainerHeader>
-    );
+  );
 }  

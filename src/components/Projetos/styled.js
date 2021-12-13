@@ -5,7 +5,12 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;       
+    width: 100%;
+    h1{
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #fff;
+    }       
 `
 
 export const ContainerSlide = styled.div`
@@ -55,13 +60,13 @@ display:flex;
 export const ContainerInto = styled.div`
         display: flex;
         flex-wrap: wrap;        
-        width: 80%;        
+        width: 90%;        
         align-items: center;
         justify-content: center;
 `
 
 export const Card = styled.div`
-    width: 40%;    
+    width: 45%;    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,4 +80,13 @@ img{
     width: 100%;
     height: 490px;
     border-radius: 10px;
-} `
+}
+@media (max-width: 768px) {
+    width: 90%;
+}
+@media (max-width: 425px) {
+    width: 100%;
+    img{
+        height: 300px;
+    }
+`

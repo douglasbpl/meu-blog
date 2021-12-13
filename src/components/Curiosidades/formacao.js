@@ -2,13 +2,13 @@ import React from "react";
 import * as S from "./styled";
 import { graphql, useStaticQuery } from 'gatsby'
 
-export default function SecondSection() {
+export default function Formacao() {
+
   const data = useStaticQuery(graphql`
   query {
     alldata{
       mainSecoSections{
-        formacao
-        formado1
+        formacao        
         formado2
         formado3
         formado4
@@ -22,7 +22,7 @@ export default function SecondSection() {
   }
   `)
 
-  const { formacao, formado1, formado2, formado3, formado4, formado5, formado6, minhafotopequeno } = data.alldata.mainSecoSections[0]
+  const { formacao, formado2, formado3, formado4, formado5, formado6, minhafotopequeno } = data.alldata.mainSecoSections[0]
 
 
   return (
@@ -33,7 +33,6 @@ export default function SecondSection() {
         <S.MyIMG src={minhafotopequeno.url} alt="Minha foto pequeno" />
         </figure>
         <ul>
-          <li><p>{formado1}</p></li>
           <li><p>{formado2}</p></li>
           <li><p>{formado3}</p></li>
           <li><p>{formado4}</p></li>

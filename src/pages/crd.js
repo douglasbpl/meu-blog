@@ -10,11 +10,11 @@ export default function Crd() {
   return (
     <div>
       <GlobalStyle />
-       <Helmet>
-       <title>Um pouco sobre mim</title>
+      <Helmet>
+        <title>Um pouco sobre mim</title>
       </Helmet>
-      <Curiosidades/>
-      <Footer/>
+      <Curiosidades />
+      <Footer />
     </div>
   )
 }

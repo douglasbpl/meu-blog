@@ -7,9 +7,15 @@ flex-direction: column;
 background-color:#0b122e;
 color: #fff;
 width: 100%;
+max-height: 15vh;
 // background-color: #2d3246;
 font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 text-transform: uppercase;
+@media (max-width: 320px) {
+  font-size: 11px;
+}
+
+
 `
 
 export const Container = styled.div`

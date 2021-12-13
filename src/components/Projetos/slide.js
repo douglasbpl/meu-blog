@@ -7,83 +7,84 @@ import { graphql, useStaticQuery } from 'gatsby'
 export default function SimpleSlider() {
 
   const settings = {
-    enableKeyboardControls : true,
-    enableMouseSwipe : true,
-    enableTouch : true,
-    heightMode : 'current',
-    initialSlideHeight : 300,
-    initialSlideWidth : 300,
-    slideIndex : 0,
-    slidesToShow : 1,
-    slidesToScroll : 1,
-    speed : 500,
-    swiping : true,
-    transitionMode : 'scroll',
-    widthMode : 'current',
-    wrapAround : true,
-    autoplay : true,
-    autoplayInterval : 3000,
-    pauseOnHover : true,    
+    enableKeyboardControls: true,
+    enableMouseSwipe: true,
+    enableTouch: true,
+    heightMode: 'current',
+    initialSlideHeight: 300,
+    initialSlideWidth: 300,
+    slideIndex: 0,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 500,
+    swiping: true,
+    transitionMode: 'scroll',
+    widthMode: 'current',
+    wrapAround: true,
+    autoplay: true,
+    autoplayInterval: 3000,
+    pauseOnHover: true,
   }
-    
+
 
   const data = useStaticQuery(graphql`
         query {
             alldata{               
-                  projetos {
-                    bthome
-                    btcrd
-                    ttlprj                    
-                    mod1
-                    beat{
-                      url
-                    }
-                    boaspraticas{
-                      url
-                    }
-                    finn{
-                      url
-                    }
-                    thewitcher{
-                      url
-                    }
-                    crespos{
-                      url
-                    }
-                    mod2
-                    calculadora{
-                      url
-                    }
-                    contador{
-                      url
-                    }
-                    toDo{
-                      url
-                    }
-                    filmeseseries{
-                      url
-                    }
-                    lojadecarros{
-                      url
-                    }
-                    mod3
-                    recipes{
-                      url
-                    }
-                    taxi{
-                      url
-                    }
-                    strytegy{
-                      url
-                    }
-                    harrypotter{
-                      url
-                    }
-                    pokemonunite{
-                      url
-                    }
-                    btveronline
-                  }
+              projetos {
+                bthome
+                btsobre    
+                ttlprj
+                mprojetos
+                mod1
+                beat{
+                  url
+                }
+                boaspraticas{
+                  url
+                }
+                finn{
+                  url
+                }
+                thewitcher{
+                  url
+                }
+                crespos{
+                  url
+                }
+                mod2
+                calculadora{
+                  url
+                }
+                contador{
+                  url
+                }
+                toDo{
+                  url
+                }
+                filmeseseries{
+                  url
+                }
+                lojadecarros{
+                  url
+                }
+                mod3
+                recipes{
+                  url
+                }
+                taxi{
+                  url
+                }
+                strytegy{
+                  url
+                }
+                harrypotter{
+                  url
+                }
+                pokemonunite{
+                  url
+                }
+                btveronline
+              }
             }
         }
     `)
@@ -116,10 +117,10 @@ export default function SimpleSlider() {
       <S.Card>
         <h2>{mod1}</h2>
         <Carousel {...settings}>
-          {dataprj.slice(0, 5).map((mod1, index) => (            
-              <div key={index}>
-                <img src={mod1.img} alt="Miniatura do Projeto" />
-              </div>
+          {dataprj.slice(0, 5).map((mod1, index) => (
+            <div key={index}>
+              <img src={mod1.img} alt="Miniatura do Projeto" />
+            </div>
           ))}
         </Carousel>
       </S.Card>
@@ -127,10 +128,10 @@ export default function SimpleSlider() {
       <S.Card>
         <h2>{mod2}</h2>
         <Carousel {...settings}>
-          {dataprj.slice(5, 10).map((mod2, index) => (            
-              <div key={index}>
-                <img src={mod2.img} alt="Miniatura do Projeto" />
-              </div>
+          {dataprj.slice(5, 10).map((mod2, index) => (
+            <div key={index}>
+              <img src={mod2.img} alt="Miniatura do Projeto" />
+            </div>
           ))}
         </Carousel>
       </S.Card>
@@ -138,15 +139,15 @@ export default function SimpleSlider() {
       <S.Card>
         <h2>{mod3}</h2>
         <Carousel {...settings}>
-          {dataprj.slice(10, 14).map((mod3, index) => (            
-              <div key={index}>
-                <img src={mod3.img} alt="Miniatura do Projeto" />
-              </div>
+          {dataprj.slice(10, 15).map((mod3, index) => (
+            <div key={index}>
+              <img src={mod3.img} alt="Miniatura do Projeto" />
+            </div>
           ))}
         </Carousel>
-      </S.Card>    
-      
-      </S.ContainerInto>     
+      </S.Card>
+
+    </S.ContainerInto>
 
   )
 }

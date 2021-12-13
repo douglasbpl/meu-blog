@@ -4,13 +4,13 @@ import styled from 'styled-components';
 export const ContainerHeader = styled.div`
 display:flex;
 width:100%;
+min-height:10vh;
 `
 export const ContainerMenuFixed = styled.div`
 width:100%;
 background-color:#0b122e;
 display:flex;
-position:fixed;
-z-index:999;
+
 `
 export const MenuFixed = styled.nav`
 display: flex;
@@ -22,11 +22,14 @@ export const List = styled.ul`
 display:flex;
     align-items:center;
     justify-content:space-around;
-    width:85%;
+    width:50%;
     height:100%;    
     flex-wrap: wrap;
     list-style:none;
     font-size:1.3rem;
+    @media (max-width: 768px) {
+        width:80%;
+    }
 `
 
 export const ListItem = styled.li`
@@ -40,6 +43,9 @@ display:flex;
     background-color: #24ada5;
     color:gold;    
 }
+@media (max-width: 425px){
+    min-width:30vw;
+} 
 `
 export const IMG = styled.img`
 width:50px;`

@@ -36,29 +36,7 @@ display:flex;
     padding:0;    
     flex-wrap: wrap;
     list-style:none;
-    font-size:1.3rem;
-    animation-name: lightSpeedIn;    
-    animation-timing-function: ease-out;
-     animation-duration: 1s;
-     animation-fill-mode: both;    
-    @keyframes lightSpeedIn {
-        0% {
-        transform: translate3d(100%, 0, 0) skewX(-30deg);
-        opacity: 0;
-        }
-        60% {
-        transform: skewX(20deg);
-        opacity: 1;
-        }
-        80% {
-        transform: skewX(-5deg);
-        opacity: 1;
-        }
-        100% {
-        transform: none;
-        opacity: 1;
-        }
-    }  
+    font-size:1.3rem;    
 `
 
 export const ListItem = styled.li`
@@ -97,49 +75,6 @@ export const MyPhoto = styled.img`
 border-radius: 10% ;
 height:400;           
 width: 350px;
-animation-name: zoomInDown;
-animation-duration: 1s;
-animation-fill-mode: both;
-    @keyframes zoomInDown {
-        0% {
-        opacity: 0;
-        transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-        }
-        60% {
-        opacity: 1;
-        transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-        }
-    }
-    &:hover{  
-        animation-name: rubberBand;
-        animation-duration: 1s;
-        animation-fill-mode: both;
-        }
-        @keyframes rubberBand {
-        0% {
-        transform: scale3d(1, 1, 1);
-        }
-        30% {
-        transform: scale3d(1.25, 0.75, 1);
-        }
-        40% {
-        transform: scale3d(0.75, 1.25, 1);
-        }
-        50% {
-        transform: scale3d(1.15, 0.85, 1);
-        }
-        65% {
-        transform: scale3d(.95, 1.05, 1);
-        }
-        75% {
-        transform: scale3d(1.05, .95, 1);
-        }
-        100% {
-        transform: scale3d(1, 1, 1);
-        }
-      }
 @media (max-width: 320px) {        
         width: 300px;
         height: 300px;
@@ -153,69 +88,22 @@ export const BoxTxtFirst = styled.div`
     border-radius: 10% ;            
     p{      
         font-size:25px;        
-        text-align:center;
-        animation-name: lightSpeedIn;    
-    animation-timing-function: ease-out;
-     animation-duration: 1s;
-     animation-fill-mode: both;    
-    @keyframes lightSpeedIn {
-        0% {
-        transform: translate3d(100%, 0, 0) skewX(-30deg);
-        opacity: 0;
-        }
-        60% {
-        transform: skewX(20deg);
-        opacity: 1;
-        }
-        80% {
-        transform: skewX(-5deg);
-        opacity: 1;
-        }
-        100% {
-        transform: none;
-        opacity: 1;
-        }
-    }          
+        text-align:center;   
     }
     @media (max-width: 425px) {
         p{
             font-size:18px;
-        }
-        
-         
-      
+        }   
         `
     
  export const BoxTxtSecond = styled.div`
  display:flex;
     justify-content:center;
     align-items:center;   
-        p{
-            animation-name: lightSpeedIn;    
-            animation-timing-function: ease-out;
-             animation-duration: 1s;
-             animation-fill-mode: both;    
-            @keyframes lightSpeedIn {
-                0% {
-                transform: translate3d(100%, 0, 0) skewX(-30deg);
-                opacity: 0;
-                }
-                60% {
-                transform: skewX(20deg);
-                opacity: 1;
-                }
-                80% {
-                transform: skewX(-5deg);
-                opacity: 1;
-                }
-                100% {
-                transform: none;
-                opacity: 1;
-                }
-            }             
+        p{                      
         font-size:25px;        
         text-align:center;        
-    }
+        }
     @media (max-width: 425px) {
         p{
             font-size:18px;
@@ -259,53 +147,7 @@ figure{
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    animation-name: zoomInDown;
-animation-duration: 1s;
-animation-fill-mode: both;
-    @keyframes zoomInDown {
-        0% {
-        opacity: 0;
-        transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-        }
-        60% {
-        opacity: 1;
-        transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-        }
-    }
-    &:hover{  
-        animation-name: rubberBand;
-        animation-duration: 1s;
-        animation-fill-mode: both;
-        }
-        @keyframes rubberBand {
-        0% {
-        transform: scale3d(1, 1, 1);
-        }
-        30% {
-        transform: scale3d(1.25, 0.75, 1);
-        }
-        40% {
-        transform: scale3d(0.75, 1.25, 1);
-        }
-        50% {
-        transform: scale3d(1.15, 0.85, 1);
-        }
-        65% {
-        transform: scale3d(.95, 1.05, 1);
-        }
-        75% {
-        transform: scale3d(1.05, .95, 1);
-        }
-        100% {
-        transform: scale3d(1, 1, 1);
-        }
-      }
-    
-
-}   
-
+}  
 ul{
     display: flex;
     flex-direction: column;
@@ -343,7 +185,6 @@ padding-top:3vh;
 @media (max-width: 425px){
     padding-top:10vh; 
 }
-
 `
 
 export const TittlePOne = styled.h2`
@@ -376,7 +217,6 @@ padding-bottom:2rem;
 figure{
     order:1;
 }
-
 div {
 display:flex;
 flex-direction:column;
@@ -392,7 +232,6 @@ order:2;
         text-align:center;
     }
 }
-
 div > h2 {
     color: white;
     font-size:30px;
@@ -427,8 +266,6 @@ div > button {
         align-self:center;
     }
 }
-
-
 div > button:hover {
     background-color: black;    
 }
@@ -436,49 +273,6 @@ img{
     border-radius: 10%;
     width: 400px;
     height: 350px;
-    animation-name: zoomInDown;
-animation-duration: 1s;
-animation-fill-mode: both;
-    @keyframes zoomInDown {
-        0% {
-        opacity: 0;
-        transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-        }
-        60% {
-        opacity: 1;
-        transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-        }
-    }
-    &:hover{  
-        animation-name: rubberBand;
-        animation-duration: 1s;
-        animation-fill-mode: both;
-        }
-        @keyframes rubberBand {
-        0% {
-        transform: scale3d(1, 1, 1);
-        }
-        30% {
-        transform: scale3d(1.25, 0.75, 1);
-        }
-        40% {
-        transform: scale3d(0.75, 1.25, 1);
-        }
-        50% {
-        transform: scale3d(1.15, 0.85, 1);
-        }
-        65% {
-        transform: scale3d(.95, 1.05, 1);
-        }
-        75% {
-        transform: scale3d(1.05, .95, 1);
-        }
-        100% {
-        transform: scale3d(1, 1, 1);
-        }
-      }
 }
 @media (max-width: 375px) {
     img{
@@ -486,7 +280,6 @@ animation-fill-mode: both;
         height: 300px;
     }
 }
-
 `
 
 
@@ -496,7 +289,6 @@ width:100%;
 justify-content:center;
 padding-bottom:2rem;
 flex-wrap:wrap;
-
 figure{
     order:2;
 }
@@ -505,7 +297,6 @@ figure{
         order:1;
     }
 }
-
 div {
     display:flex;
     flex-direction:column;
@@ -521,13 +312,11 @@ div {
         text-align:center;
     }
 }
-
 div > h2 {
     color: white;
     font-size:30px;
     
 }
-
 div > p {
     color: white;
     font-size:16px;
@@ -552,59 +341,14 @@ div > button {
         align-self:center;
     }
 }
-
 div > button:hover {
     background-color: black;
     
 }
-
 img{
     border-radius: 10%;
     width: 400px;
     height: 350px;
-    animation-name: zoomInDown;
-animation-duration: 1s;
-animation-fill-mode: both;
-    @keyframes zoomInDown {
-        0% {
-        opacity: 0;
-        transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-        }
-        60% {
-        opacity: 1;
-        transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-        }
-    }
-    &:hover{  
-        animation-name: rubberBand;
-        animation-duration: 1s;
-        animation-fill-mode: both;
-        }
-        @keyframes rubberBand {
-        0% {
-        transform: scale3d(1, 1, 1);
-        }
-        30% {
-        transform: scale3d(1.25, 0.75, 1);
-        }
-        40% {
-        transform: scale3d(0.75, 1.25, 1);
-        }
-        50% {
-        transform: scale3d(1.15, 0.85, 1);
-        }
-        65% {
-        transform: scale3d(.95, 1.05, 1);
-        }
-        75% {
-        transform: scale3d(1.05, .95, 1);
-        }
-        100% {
-        transform: scale3d(1, 1, 1);
-        }
-      }
 }
 @media (max-width: 375px) {
     img{

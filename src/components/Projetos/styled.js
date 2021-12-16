@@ -75,50 +75,7 @@ export const Card = styled.div`
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
-    border-radius: 10px;
-    animation-name: zoomInDown;
-animation-duration: 1s;
-animation-fill-mode: both;
-    @keyframes zoomInDown {
-        0% {
-        opacity: 0;
-        transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-        }
-        60% {
-        opacity: 1;
-        transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-        }
-    }
-    &:hover{  
-        animation-name: rubberBand;
-        animation-duration: 1s;
-        animation-fill-mode: both;
-        }
-        @keyframes rubberBand {
-        0% {
-        transform: scale3d(1, 1, 1);
-        }
-        30% {
-        transform: scale3d(1.25, 0.75, 1);
-        }
-        40% {
-        transform: scale3d(0.75, 1.25, 1);
-        }
-        50% {
-        transform: scale3d(1.15, 0.85, 1);
-        }
-        65% {
-        transform: scale3d(.95, 1.05, 1);
-        }
-        75% {
-        transform: scale3d(1.05, .95, 1);
-        }
-        100% {
-        transform: scale3d(1, 1, 1);
-        }
-      }    
+    border-radius: 10px;        
 img{
     width: 100%;
     height: 490px;

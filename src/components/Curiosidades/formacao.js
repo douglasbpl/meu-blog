@@ -26,7 +26,7 @@ export default function Formacao() {
 
 
   return (
-    <S.ContainerSecondSection id="Formação">
+    <S.ContainerFormation id="Formação">
       <h2>{formacao}</h2>
       <div>
         <figure>
@@ -40,7 +40,7 @@ export default function Formacao() {
           <li><p>{formado6}</p></li>        
         </ul>
       </div>      
-    </S.ContainerSecondSection>
+    </S.ContainerFormation>
   )
 
 

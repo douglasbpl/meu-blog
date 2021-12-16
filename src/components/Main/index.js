@@ -23,8 +23,8 @@ export function Main() {
 
   return (
     <S.ContainerMain>
-      <S.ContainerFIrstSection id="Sobre">
-        <S.ContainerInterno>
+      <S.ContainerSobre>
+        <S.ContainerInt>
           <S.About>
             <h1>{ttl}</h1>
             <p>{paragraph}</p>
@@ -32,8 +32,8 @@ export function Main() {
           <figure>
             <S.MyIMG src={minhafoto.url} alt="minha foto atual" />
           </figure>
-        </S.ContainerInterno>
-      </S.ContainerFIrstSection>
+        </S.ContainerInt>
+      </S.ContainerSobre>
     </S.ContainerMain>
   );
 }

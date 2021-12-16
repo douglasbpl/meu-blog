@@ -50,34 +50,33 @@ export function Curiosidades() {
     return (
         <S.Container>
             <S.ContainerMenuFixed>
-                <S.MenuFixedPM>
+                <S.MenuFixed>
                     <S.List>
                         <Link to="/" style={{ color: "white", textDecoration: "none" }}><S.ListItem>{bthome}</S.ListItem></Link>
                         <Link to="/pjt" style={{ color: "white", textDecoration: "none" }}><S.ListItem>{btprojetos}</S.ListItem></Link>
-                        <Link style={{ color: "white", textDecoration: "none" }} to="/contatos"><S.ListItem>{btcontatos}</S.ListItem></Link>
-                        <Link style={{ color: "white", textDecoration: "none" }} to="/crd"><S.ListItem>{btsobre}</S.ListItem></Link>
+                        <Link to="/contatos" style={{ color: "white", textDecoration: "none" }}><S.ListItem>{btcontatos}</S.ListItem></Link>
+                        <Link to="/crd" style={{ color: "white", textDecoration: "none" }}><S.ListItem>{btsobre}</S.ListItem></Link>
                         <Link to="#Formação" style={{ color: "white", textDecoration: "none" }}><S.ListItem>{btformacao}</S.ListItem></Link>
                         <Link to="#Curiosidades" style={{ color: "white", textDecoration: "none" }}><S.ListItem>{btcuriosidades}</S.ListItem></Link>
                         <Link to="#Footer" style={{ color: "white", textDecoration: "none" }}><S.ListItem>{btredessociais}</S.ListItem></Link>
                     </S.List>
-                </S.MenuFixedPM>
+                </S.MenuFixed>
             </S.ContainerMenuFixed>
 
             <S.BoxAbout id="Sobre">
-
-                <S.BoxTxtLeft>
+                <S.BoxTxtFirst>
                     <p>{mchamo}</p>
-                </S.BoxTxtLeft >
+                </S.BoxTxtFirst>
                 <S.MyPhoto src={minhafoto.url} alt="Minha Foto" />
-                <S.BoxTxtRight>
+                <S.BoxTxtSecond>
                     <p>{msonho}</p>
-                </S.BoxTxtRight>
+                </S.BoxTxtSecond>
             </S.BoxAbout>
 
             <Formacao id="Formação" />
 
-            <S.ContainerSection id="Curiosidades">
-                <S.TittleSecoSection >{curi}<S.SpUloax>{osidades}</S.SpUloax> </S.TittleSecoSection>
+            <S.ContainerCuriosities id="Curiosidades">
+                <S.TittlePOne >{curi}<S.TittlePtwo >{osidades}</S.TittlePtwo> </S.TittlePOne>
                 <S.IntoSectionleft>
                     <figure><img src={imgcozinhar.url} alt="Foto da minha Torta de Frango" /></figure>
                     <div>
@@ -86,9 +85,7 @@ export function Curiosidades() {
                         <button>{btvermais}</button>
                     </div>
                 </S.IntoSectionleft>
-
                 <S.IntoSectionRight>
-
                     <div>
                         <h2>{jogos}</h2>
                         <p>{prgjogos}</p>
@@ -96,7 +93,6 @@ export function Curiosidades() {
                     </div>
                     <figure><img src={imgjogos.url} alt="Foto Vencendo um torneio" /></figure>
                 </S.IntoSectionRight>
-
                 <S.IntoSectionleft>
                     <figure><img src={imgaluno.url} alt="Merito escolar" /></figure>
                     <div>
@@ -105,9 +101,7 @@ export function Curiosidades() {
                         <button>{btvermais}</button>
                     </div>
                 </S.IntoSectionleft>
-
-            </S.ContainerSection>
-
+            </S.ContainerCuriosities>
         </S.Container>
     );
 }

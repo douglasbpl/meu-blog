@@ -1,7 +1,7 @@
 import React from 'react'
 import Carousel from 'nuka-carousel'
 import * as S from './styled'
-import { graphql, Link, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 
 
 export default function SimpleSlider() {
@@ -94,10 +94,10 @@ export default function SimpleSlider() {
   const prj = data.alldata.projetos[0]
 
   const dataprj = [
-    { img: prj.beat.url, link: "" },
-    { img: prj.boaspraticas.url, link: "" },
-    { img: prj.finn.url, link: "" },
-    { img: prj.thewitcher.url, link: "" },
+    { img: prj.beat.url },
+    { img: prj.boaspraticas.url },
+    { img: prj.finn.url },
+    { img: prj.thewitcher.url },
     { img: prj.crespos.url, link: 'https://competent-austin-f7943f.netlify.app/' },
     { img: prj.calculadora.url, link: 'https://i3v0s.csb.app/ ' },
     { img: prj.contador.url, link: 'https://bc4hh.csb.app/' },

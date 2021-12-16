@@ -7,22 +7,44 @@ export const ContainerContatos = styled.div`
     justify-content: space-around;
     width: 100%;    
     min-height: 75vh;
-    color: #fff; 
+    color: #fff;
+    @media (max-width: 425px) { 
+        min-height: 71vh;
+    }
+   
     h1{
         font-size: 2.5rem;
         font-weight: bold;
-        
         margin-bottom: 1rem;
-        
-
-    }
+     }
     p{
         font-size: 1.5rem;
-        font-weight: bold;
-        
+        font-weight: bold;        
         text-align: center;
-
+        animation-name: lightSpeedIn;    
+    animation-timing-function: ease-out;
+     animation-duration: 1s;
+     animation-fill-mode: both;    
+    @keyframes lightSpeedIn {
+        0% {
+        transform: translate3d(100%, 0, 0) skewX(-30deg);
+        opacity: 0;
+        }
+        60% {
+        transform: skewX(20deg);
+        opacity: 1;
+        }
+        80% {
+        transform: skewX(-5deg);
+        opacity: 1;
+        }
+        100% {
+        transform: none;
+        opacity: 1;
+        }
+    }  
     }
+
 `;
 
 export const Form = styled.form`
@@ -30,9 +52,24 @@ export const Form = styled.form`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;   
+    width: 80%;
+    animation-name: zoomInDown;
+animation-duration: 1s;
+animation-fill-mode: both;
+    @keyframes zoomInDown {
+        0% {
+        opacity: 0;
+        transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        }
+        60% {
+        opacity: 1;
+        transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        }
+    }
     
-    
+         
 `;
 
 export const Input = styled.input`

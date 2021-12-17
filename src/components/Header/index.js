@@ -2,6 +2,7 @@ import React from "react";
 import * as S from "./styled";
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from 'gatsby'
+import Navbar from '../Nav/navbar'
 
 
 
@@ -39,6 +40,7 @@ export function Header() {
             <Link style={{ color: "white", textDecoration: "none" }} to="/contatos"><S.ListItem>{btcontatos}</S.ListItem></Link>
           </S.List>
         </S.Menu>
+        <Navbar/> 
       </S.ContainerMenu>
     </S.ContainerHeader>
   );

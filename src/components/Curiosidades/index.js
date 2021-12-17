@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import { graphql, useStaticQuery } from 'gatsby'
 import * as S from './styled'
 import Formacao from "./formacao"
+import Navbar from '../Curiosidades/Nav/navbar'
 
 
 export function Curiosidades() {
@@ -11,6 +12,9 @@ export function Curiosidades() {
         query {
             alldata{                
                 curiosidades {
+                    logoheader{
+                        url
+                      }
                     bthome
                     btprojetos
                     btsobre
@@ -45,12 +49,13 @@ export function Curiosidades() {
             }
         }`)
 
-    const { bthome, btsobre, btcontatos, btformacao, btcuriosidades, btredessociais, btprojetos, btvermais, curi, osidades, cozinhar, prgcozinhar, jogos, prgjogos, aluno, prgaluno, imgcozinhar, imgjogos, imgaluno, minhafoto, mchamo, msonho } = data.alldata.curiosidades[0]
+    const { logoheader,bthome, btsobre, btcontatos, btformacao, btcuriosidades, btredessociais, btprojetos, btvermais, curi, osidades, cozinhar, prgcozinhar, jogos, prgjogos, aluno, prgaluno, imgcozinhar, imgjogos, imgaluno, minhafoto, mchamo, msonho } = data.alldata.curiosidades[0]
 
     return (
         <S.Container>
             <S.ContainerMenuFixed>
                 <S.MenuFixed>
+                <S.IMG src={logoheader.url} alt="Minha foto em desenho" />
                     <S.List>
                         <Link to="/" style={{ color: "white", textDecoration: "none" }}><S.ListItem>{bthome}</S.ListItem></Link>
                         <Link to="/pjt" style={{ color: "white", textDecoration: "none" }}><S.ListItem>{btprojetos}</S.ListItem></Link>
@@ -60,6 +65,7 @@ export function Curiosidades() {
                         <Link to="#Curiosidades" style={{ color: "white", textDecoration: "none" }}><S.ListItem>{btcuriosidades}</S.ListItem></Link>
                         <Link to="#Footer" style={{ color: "white", textDecoration: "none" }}><S.ListItem>{btredessociais}</S.ListItem></Link>
                     </S.List>
+                    <Navbar/> 
                 </S.MenuFixed>
             </S.ContainerMenuFixed>
 

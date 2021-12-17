@@ -18,13 +18,27 @@ position:fixed;
 top:0;
 left:0;
 z-index:999;
+@media (max-width: 425px) {
+    position:relative;
+}    
 `
+export const IMG = styled.img`
+width:48px;
+
+`
+
 export const MenuFixed = styled.nav`
 display:flex;
 align-items:center;
 justify-content:space-around;
 width:100%;
 min-height:10vh;
+@media (max-width: 425px) {
+    display:flex;
+align-items:center;
+justify-content:center;
+width:66%;
+}
 `
 
 export const List = styled.ul`
@@ -36,7 +50,10 @@ display:flex;
     padding:0;    
     flex-wrap: wrap;
     list-style:none;
-    font-size:1.3rem;    
+    font-size:1.3rem;
+    @media (max-width: 425px) {
+        display:none;
+    }    
 `
 
 export const ListItem = styled.li`
@@ -69,7 +86,8 @@ flex-wrap: wrap;
 } 
 padding-top:10vh; 
 @media (max-width: 425px){
-    padding-top:20vh; 
+padding-top:0;}
+     
 `
 export const MyPhoto = styled.img`
 border-radius: 10% ;
@@ -125,8 +143,7 @@ padding-top:10vh;
     margin-top: 10px;
 } 
 @media (max-width: 425px){
-    padding-top:18vh; 
-}
+    padding-top:0;}
 div{
     display: flex;
     width: 100%;
@@ -183,7 +200,8 @@ width:100%;
 padding-bottom:2rem;
 padding-top:3vh;
 @media (max-width: 425px){
-    padding-top:10vh; 
+    padding-top:0;}
+     
 }
 `
 

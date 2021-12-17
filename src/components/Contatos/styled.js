@@ -9,7 +9,7 @@ export const ContainerContatos = styled.div`
     min-height: 75vh;
     color: #fff;
     @media (max-width: 425px) { 
-        min-height: 71vh;
+        min-height: 75vh;
     }
    
     h1{

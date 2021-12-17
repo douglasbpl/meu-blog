@@ -15,7 +15,7 @@ justify-content: center;
 width: 100%;
 min-height: 75vh;
 @media (max-width: 425px) {
-    min-height: 71vh;
+    min-height: 75vh;
 }
 
 `
